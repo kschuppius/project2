@@ -106,13 +106,7 @@ export class PolarisChip extends LitElement {
         border-radius: 3px;
         font-size: 28px;
       }
-.link:hover{
-        background-color : #e4e5e7;
-        border: 2px solid #e4e5ef;
-        border-radius: 2px;
-        color: #005fa9;
-        cursor: pointer;
-      }
+
       .link,
       :host([tinted]) .link:hover{
         background-color : #e4e5e7;
@@ -152,7 +146,7 @@ export class PolarisChip extends LitElement {
       .link,
       :host([primary-filled]) .link:hover{
         background-color : #e4e5e7;
-        border: 2px solid #e4e5ef;
+        border: 2px solid #005fa9;
         border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
@@ -172,7 +166,7 @@ export class PolarisChip extends LitElement {
       .link,
       :host([tinted]) .link
        {
-        background-color: #45627c;
+        background-color: #45627c ; 
         border: 2px solid #45637c;
         border-radius: 3px;
         color: #cce9ff;
@@ -269,6 +263,13 @@ export class PolarisChip extends LitElement {
 }
 
 /** 
+ .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;   // i dont think i need this attribute 
+      }
 
       .link-focus, 
       .link:hover,
