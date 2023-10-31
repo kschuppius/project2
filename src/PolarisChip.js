@@ -74,10 +74,20 @@ export class PolarisChip extends LitElement {
   }
   static get styles() {
     return css`
-      :host {
-        display: inline-block;
-        margin:0 12px 12px 0;
-      }
+    :host {
+      display: inline-block;
+      margin: 0 12px 12px 0;
+      margin-top: 35px;
+      padding-left: 9px;
+      
+    }
+
+    .wrapper {
+      padding: 18px 9px;
+      border: 2px solid;
+      border-radius: 3px;
+    color: #00ff51;
+  }
       .link{
         font-weight: bold;
         text-decoration: none;
@@ -135,8 +145,6 @@ export class PolarisChip extends LitElement {
         font-weight: bold;
         cursor: pointer;
       }
-
-      
       
       .link,
       :host([primaryOutlined]) .link{ 
