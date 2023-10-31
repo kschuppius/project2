@@ -1,42 +1,3 @@
-/** 
-import { LitElement, html, css } from 'lit';
-
-export class PolarisChip extends LitElement {
-  static get properties() {
-    return {
-      name: { type: String },
-      link: {type: String},
-      active: { type: Boolean, reflect: true }
-    };
-  }
-
-  primaryOutlined: {
-    type: Boolean, 
-    reflect: true, 
-    attribute: "primary-outlined",
-  },
-  primaryFilled: {
-    type: Boolean, 
-    reflect: true, 
-    attribute: "primary-filled",},
-
-    tinted: {
-    type: Boolean, 
-    reflect: true, 
-    },
-
-    lightOutlined: {
-    type: Boolean, 
-    reflect: true, 
-    attribute: "light-outlined",
-  }, 
-   lightFilled: {
-    type: Boolean, 
-    reflect: true, 
-    attribute: "light-filled",
-  }
-}
-**/
 import { LitElement, html, css } from 'lit';
 
 export class PolarisChip extends LitElement {
@@ -307,19 +268,4 @@ export class PolarisChip extends LitElement {
         border-radius: 4px;
         text-decoration: none;
       }
-
-
-    `;
-  }
-
-  constructor() {
-    super();
-    this.name = 'Football';
-    this.link = "https://www.psu.edu/news/research";
-  }
-
-  render() {
-    return html`<a class= "link" href= "${this.link}"><slot>${this.name}</slot></a>`;
-  }
-}
 **/
