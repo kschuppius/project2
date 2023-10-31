@@ -109,10 +109,10 @@ export class PolarisChip extends LitElement {
 
       .link,
       :host([tinted]) .link:hover{
-        background-color : #e4e5e7;
+        background-color : #cce9ff;
         border: 2px solid #e4e5ef;
         border-radius: 2px;
-        color: #005fa9;
+        color: #45627c;
         cursor: pointer;
       }
 
