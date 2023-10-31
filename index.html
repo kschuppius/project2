@@ -15,53 +15,39 @@
       font-family: sans-serif;
       background-color: #ededed;
       
+      
     }
     .button-container {
       margin: 2px;
-      display: inline-block;
+      padding: 8px 4px;
+      display: flex;
       background-color: transparent;
       border: 50px 8px;
       border-radius: 5px;
-      width: 150px;
+      width: fit-content;
       height: 80px;
     }
 
     .button-containertt{
       margin: 2px;
-      display: inline-block;
+      padding: 8px 4px;
+      display: flex;
       background-color: rgb(210, 211, 216);
       border: 50px 8px;
       border-radius: 5px;
-      width: 150px;
+      width: fit-content;
       height: 80px;
     }
     .button-container-light{
       margin: 2px;
-      display: inline-block;
+      display: flex;
       background-color: #001e44;
       border: 50px 8px;
-      border-radius: px;
-      width: 150px;
+      border-radius: 5px;
+      width: fit-content;
       height: 80px;
     }
 
-    .demo{
-      display:flex; /* Use Flexbox for the demo container */
-      align-items: center; /* Vertically center content */
-      margin: 2px;
-      padding-left:30px;
-      border-top: 8px solid;
-      border-bottom: 16px solid;
-      border-color: #001e44;
-      background-image:url(" https://static.vecteezy.com/system/resources/previews/002/304/641/large_2x/abstract-warped-diagonal-striped-background-curved-twisted-slanting-waved-lines-texture-brand-new-style-for-your-business-design-free-vector.jpg");
-      width: 700px;
-      height: 200px;
-      font-size: 30px;
-      font-weight: bold;
-      color: #3f4041;
-      text-transform: uppercase;
-      font-style: italic;
-    }
 
     tb{
       display: inline-block;
@@ -74,23 +60,25 @@
 
 <body>
   <div class="button-container">
-    <polaris-chip name="primaryOutlined" primaryOutlined></polaris-chip>
+    <polaris-chip name="primaryOutlined" primary-outlined></polaris-chip>
   </div>
   <div class="button-container">
-    <polaris-chip name="primaryFilled" primaryFilled></polaris-chip>
+    <polaris-chip name="primaryFilled" primary-filled></polaris-chip>
   </div>
   <div class="button-containertt">
     <polaris-chip name="Tinted" tinted></polaris-chip>
   </div>
   <div class="button-container-light">
-    <polaris-chip name="lightOutlined" lightOutlined></polaris-chip>
+    <polaris-chip name="lightOutlined" light-outlined></polaris-chip>
   </div>
   <div class="button-container-light">
-    <polaris-chip name="lightFilled" lightFilled></polaris-chip>
+    <polaris-chip name="lightFilled" light-filled></polaris-chip>
   </div>
 
   <script type="module" src="./src/polaris-chip.js"></script>
 </body>
+
+
 
 </html>
 

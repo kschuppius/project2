@@ -49,12 +49,12 @@ export class PolarisChip extends LitElement {
       primaryOutlined: {
         type: Boolean,
         reflect: true,
-       // attribute: "primary-outlined",
+        attribute: "primary-outlined",
       },
       primaryFilled: {
         type: Boolean,
         reflect: true,
-        //attribute: "primary-filled",
+        attribute: "primary-filled",
       },
       tinted: {
         type: Boolean,
@@ -63,12 +63,12 @@ export class PolarisChip extends LitElement {
       lightOutlined: {
         type: Boolean,
         reflect: true,
-        //attribute: "light-outlined",
+        attribute: "light-outlined",
       },
       lightFilled: {
         type: Boolean,
         reflect: true,
-        //attribute: "light-filled",
+        attribute: "light-filled",
       },
     };
   }
@@ -90,7 +90,6 @@ export class PolarisChip extends LitElement {
       border-radius: 3px;
       color: #005fa9;
       cursor: pointer;
-      padding: 0.325rem 1rem;
     }
 
     .wrapper {
@@ -114,6 +113,52 @@ export class PolarisChip extends LitElement {
         color: #005fa9;
         cursor: pointer;
       }
+      .link,
+      :host([tinted]) .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+      }
+
+      .link,
+      :host([light-outlined]) .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+      }
+
+      .link,
+      :host([light-filled]) .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+      }
+
+      .link,
+      :host([primary-outlined]) .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+      }
+
+      .link,
+      :host([primary-filled]) .link:hover{
+        background-color : #e4e5e7;
+        border: 2px solid #e4e5ef;
+        border-radius: 2px;
+        color: #005fa9;
+        cursor: pointer;
+      }
+
+
 .link:focus {
         background-color: #45637c;
         border: 2px solid #45637c;
@@ -125,7 +170,8 @@ export class PolarisChip extends LitElement {
       }
 
       .link,
-      :host([tinted]) .link {
+      :host([tinted]) .link
+       {
         background-color: #45627c;
         border: 2px solid #45637c;
         border-radius: 3px;
@@ -136,7 +182,7 @@ export class PolarisChip extends LitElement {
       }
 
       .link,
-      :host([lightOutlined]) .link {
+      :host([light-outlined]) .link {
         background-color: #001e44;
         border: 2px solid #eff0ff;
         border-radius: 3px;
@@ -147,7 +193,7 @@ export class PolarisChip extends LitElement {
       }
 
       .link,
-      :host([lightFilled]) .link {
+      :host([light-filled]) .link {
         background-color: #cce9ff;
         border: 2px solid #cce9ff;
         border-radius: 3px;
@@ -158,7 +204,7 @@ export class PolarisChip extends LitElement {
       }
 
       .link,
-      :host([primaryOutlined]) .link{ 
+      :host([primary-outlined]) .link{ 
         background-color: transparent;
         border: 2px solid #005fa9;
         border-radius: 3px;
@@ -168,7 +214,7 @@ export class PolarisChip extends LitElement {
         cursor: pointer;
       }
       
-      :host([primaryOutlined]:hover) .link {
+      :host([primary-outlined]:hover) .link {
   background-color: #005fa9;
   border: 2px solid #005fa9;
   border-radius: 3px;
@@ -176,8 +222,9 @@ export class PolarisChip extends LitElement {
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
+  
       }
-      :host([primaryOutlined]:focus) .link {
+      :host([primary-outlined]:focus) .link {
   background-color: #063d4e;
   border: 2px solid #063d4e;
   border-radius: 3px;
@@ -188,7 +235,7 @@ export class PolarisChip extends LitElement {
 
 
       .link,
-      :host([primaryFilled]) .link{
+      :host([primary-filled]) .link{
         background-color: #005fa9;
         border: 2px solid #005fa9;
         border-radius: 3px;
