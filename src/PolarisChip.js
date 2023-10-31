@@ -75,7 +75,7 @@ export class PolarisChip extends LitElement {
   static get styles() {
     return css`
     :host {
-      display: inline-block;
+      display: flex;
       margin: 0 12px 12px 0;
       margin-top: 35px;
       padding-left: 9px;
