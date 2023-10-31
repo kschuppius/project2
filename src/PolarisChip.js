@@ -82,6 +82,17 @@ export class PolarisChip extends LitElement {
       
     }
 
+    .link-focus, 
+    .link:hover,
+    :host([active]) .link { 
+      background-color :transparent;
+      border: 2px solid #4298db;
+      border-radius: 3px;
+      color: #005fa9;
+      cursor: pointer;
+      padding: 0.325rem 1rem;
+    }
+
     .wrapper {
       padding: 18px 9px;
       border: 2px solid;
@@ -145,7 +156,7 @@ export class PolarisChip extends LitElement {
         font-weight: bold;
         cursor: pointer;
       }
-      
+
       .link,
       :host([primaryOutlined]) .link{ 
         background-color: transparent;
